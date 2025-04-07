@@ -18,3 +18,6 @@ app.listen(port, () => {
     console.log(`Сервер запущен на порту ${port}`);
 });
 
+const path = require('path');
+app.use(express.static(path.join(__dirname, 'public')));
+
